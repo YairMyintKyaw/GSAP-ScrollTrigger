@@ -1,0 +1,161 @@
+body {
+	overflow-x: hidden;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	background-color: #2e2e2e;
+}
+
+.vertical__section{
+	height: 100vh;
+	display: flex;
+
+}
+
+.vertical__section__inner{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.vertical__section p{
+	max-width: 700px;
+	font-size: 2rem	;
+}
+
+.vertical__section--hero{
+	color: #2e2e2e;
+	background-color: #ff98a2;
+}
+.vertical__section--hero h2{
+	width: 100%;
+	color: #2e2e2e;
+}
+
+.vertical__section--second{
+	background-color: #2e2e2e;
+	color: #ff98a2;
+	position: absolute;
+	top: 0;	
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.horizontal__content {
+	display: flex;
+	padding: 150px 25px;
+	width: 160%;
+}
+
+
+.horizontal__content02 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 50px 30px;
+}
+
+.horizontal__content03 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	height: 100vh;
+	position: relative;
+}
+
+.card {
+	border: solid 1px #fff;
+	color: #fff;
+	border-radius: 5px;
+	min-width: 250px;
+	padding: 40px 120px;
+	font-weight: 900;
+	font-stretch: condensed;
+}
+
+.card.animated01 {
+	margin-right: 30px;
+}
+
+.card.animated01 {
+	padding: 50px 20px;
+}
+
+.card.animated02,
+.card.animated03 {
+	flex: 1;
+	padding: 40px 60px;
+	min-width: 250px;
+	max-width: 250px;
+}
+
+
+.card.animated03 {
+	position: absolute;
+	min-width: 25%;
+	top: 50px;
+	left: 50px;
+	background-color: rgba(100, 100, 100);
+}
+
+.card--04.animated03 {
+	z-index: 0;
+}
+
+.card--05.animated03 {
+	z-index: 1;
+	transform: translate(100px, 100px)
+}
+
+.card--06.animated03 {
+	z-index: 2;
+	transform: translate(200px, 200px)
+}
+
+h2 {
+	color: #ff98a2;
+	font-size: 80px;
+	line-height: 1;
+	margin: 0;
+}
+
+.spacer {
+	height: 100vh;
+}
+
+
+@media screen and (max-width: 856px) {
+	.horizontal__content{
+		flex-direction: column;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 50px 25px;
+	}
+	.card.animated01{
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.card.animated02{
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 711px) {
+	.card.animated03{
+		max-width: 100%;
+		left:25px;
+		right: 25px;
+		margin: auto;
+	}
+	.card.card--05{
+		transform: translate(0, 100px);
+	}
+	.card.card--06{
+		transform: translate(0, 200px);
+	}
+}
