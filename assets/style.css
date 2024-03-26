@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+html{
+	overflow-x: hidden;
+}
+
 *{
 	font-family: "Bellota", system-ui;
+	box-sizing: border-box;
 }
 
 body {
@@ -83,6 +88,7 @@ body {
 	padding: 40px 120px;
 	font-weight: 900;
 	font-stretch: condensed;
+	box-shadow: 0 0 10px #ff98a2;
 }
 
 .card.animated01 {
@@ -98,11 +104,11 @@ body {
 	flex: 1;
 	padding: 40px 60px;
 	min-width: 250px;
-	max-width: 250px;
 }
 
 
 .card.animated03 {
+	max-width: 300px;
 	position: absolute;
 	min-width: 25%;
 	top: 50px;
@@ -149,6 +155,14 @@ h2 {
 	}
 	.card.animated02{
 		max-width: 100%;
+		box-sizing: border-box;
+	}
+	.vertical__section__inner h2{
+		font-size: 3rem;
+	}
+	.vertical__section__inner p{
+		font-size: 1rem;
+		/* width: 80%; */
 	}
 }
 
@@ -157,7 +171,9 @@ h2 {
 		max-width: 100%;
 		left:25px;
 		right: 25px;
+		top: 0;
 		margin: auto;
+		padding: 20px 30px;
 	}
 	.card.card--05{
 		transform: translate(0, 100px);
