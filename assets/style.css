@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 html{
 	overflow-x: hidden;
@@ -140,6 +140,42 @@ h2 {
 .spacer {
 	height: 100vh;
 }
+
+.expand{
+	padding: 200px 0;
+	text-align: center;
+	font-size: 6rem;
+	font-weight: bold;
+	color: white;
+}
+.expand__container{
+	position: relative;
+	overflow: hidden;
+}
+.expand__container > span{
+	height: 100%;
+	width: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: white;
+}
+
+.expand > p{
+	font-family: "Roboto", sans-serif;
+}
+
+.horizontal02--white{
+	background-color: white;
+}
+.horizontal02--white .card{
+	background-color: #2e2e2e;
+}
+/* .horizontal02--white p,.horizontal02--white h2 {
+	color: #2e2e2e;
+} */
 
 
 @media screen and (max-width: 856px) {

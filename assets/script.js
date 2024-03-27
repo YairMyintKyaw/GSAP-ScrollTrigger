@@ -139,7 +139,20 @@ tl03.from(".card--04", {
   rotate: 360
 })
 
-
+const tl04 = gsap.timeline({
+  scrollTrigger:{
+    trigger:".expand",
+    pin: true,
+    scrub:true,
+    start:"center center",
+    end: "+=5000"
+  }
+});
+tl04.to(".expand p",{
+  scale:25
+}).to(".expand__container > span",{
+  width: "100%"
+})
 
 // Smooth scroll
 const lenis = new Lenis(
