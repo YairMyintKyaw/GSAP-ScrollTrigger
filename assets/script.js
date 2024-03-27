@@ -148,8 +148,10 @@ const tl04 = gsap.timeline({
     end: "+=5000"
   }
 });
-tl04.to(".expand p",{
-  scale:25
+tl04.from(".expand p",{
+  scale:0, opacity:0
+}).to(".expand p",{
+  scale:25, opacity:1
 }).to(".expand__container > span",{
   width: "100%"
 })
